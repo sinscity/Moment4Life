@@ -42,17 +42,54 @@ Section:NewButton("Desdemona", "Spawns as character", function()
 game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
 end)
 
+Section:NewButton("Katie", "Spawns as character", function()
+    print("spawned as character")
+    local args = {
+    [1] = "Katie",
+}
+
+game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
+end)
+
+Section:NewButton("Sophie", "Spawns as character", function()
+    print("spawned as character")
+    local args = {
+    [1] = "Sophie",
+}
+
+game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
+end)
+
+Section:NewButton("Ursula Vanpelt", "Spawns as character", function()
+    print("spawned as character")
+    local args = {
+    [1] = "Ursula Vanpelt",
+}
+
+game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
+end)
+
+Section:NewButton("Maddie Vanpelt", "Spawns as character", function()
+    print("spawned as character")
+    local args = {
+    [1] = "Maddie Vanpelt",
+}
+
+game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
+end)
+
+Section:NewButton("The Chosen One", "Spawns as character", function()
+    print("spawned as character")
+    local args = {
+    [1] = "The Chosen One",
+}
+
+game:GetService("ReplicatedStorage").CharacterSpawn:FireServer(unpack(args))
+end)
+
 local Tab2 = Window:NewTab("Combat")
 
 local Section = Tab2:NewSection("Combats")
-
-Section:NewToggle("Instant Kill", "Keybind E", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
-end)
 
 Section:NewKeybind("Lightning Strike", "KeybindInfo", Enum.KeyCode.H, function()
 	print("You just clicked the bind")
@@ -316,8 +353,9 @@ local Tab5 = Window:NewTab("Admin")
 local Section = Tab5:NewSection("Admins")
 
 Section:NewButton("Inf Yield", "ButtonInfo", function()
-    print("Clicked")
-    
+    print("loading")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
 end)
 
 Section:NewKeybind("Close GUI", "KeybindInfo", Enum.KeyCode.LeftControl, function()
