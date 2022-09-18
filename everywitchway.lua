@@ -358,6 +358,10 @@ Section:NewButton("Inf Yield", "ButtonInfo", function()
 
 end)
 
+local Tab6 = Window:NewTab("Credits")
+local Section = Tab6:NewSection("Scripter: maraj#0007")
+local Section = Tab6:NewSection("Discord: https://discord.gg/cFZT6GCszg")
+
 Section:NewKeybind("Close GUI", "KeybindInfo", Enum.KeyCode.LeftControl, function()
 	Library:ToggleUI()
 end)
