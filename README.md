@@ -1,5 +1,5 @@
 # Games
-> **Every Witch Way Reborn [IN-DEV - PRIVATE]**
+> *Every Witch Way Reborn [PRIVATE]*
 
 # About
-> **Upcoming Scripts in Development**
+> *Upcoming Scripts in Development*
