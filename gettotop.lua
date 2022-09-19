@@ -13,6 +13,6 @@ end)
 
 local Credits = Window:NewTab("Credits")
 local Section = Credits:NewSection("Scripter: tink")
-Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.LeftCTRL, function()
+Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
