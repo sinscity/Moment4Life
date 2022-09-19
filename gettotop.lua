@@ -1,15 +1,18 @@
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local w = library:CreateWindow("Get To The Top") -- Creates the window
-
-local b = w:CreateFolder("Main") -- Creates the folder(U will put here your buttons,etc)
-
-b:DestroyGui()
-
-b:Button("Teleport to Top",function(teleportTO)
+local Window = Library.CreateLib("Get to the Top", "GrapeTheme")
+local Win = Window:NewTab("Win")
+local Section = Win:NewSection("Telports")
+Section:NewButton("Teleport to top section", "ButtonInfo", function()
     print("Teleported")
-local plyr = game.Players.LocalPlayer.Character
+    local plyr = game.Players.LocalPlayer.Character
 local Top = game:GetService("Workspace").TowerPosition.section12
 
 plyr.HumanoidRootPart.CFrame = Top.CFrame
+end)
+
+local Credits = Window:NewTab("Credits")
+local Section = Credits:NewSection("Scripter: tink")
+Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.LeftCTRL, function()
+	Library:ToggleUI()
 end)
